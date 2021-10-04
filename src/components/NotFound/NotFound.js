@@ -4,11 +4,11 @@ import img from '../../images/error1.jpg';
 
 const NotFound = () => {
     return (
-        <div>
+        <div className="text-center">
             <img className="bg-light w-50" src={img} alt="" />
             <br />
-            <Link>
-                <button className="btn btn-dark">Home</button>
+            <Link to="/home">
+                <button className="btn btn-dark my-3">Home</button>
             </Link>
             
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import banner from '../../images/banner2.jpg';
 import './HomeBannar.css';
 
@@ -14,7 +15,9 @@ const HomeBannar = () => {
                     <p className="my-4">
                     Education care comes with a collection of useful elements and beautiful predesigned layouts which let you showcase your tutors and other members of your staff in a captivating manner.
                     </p>
-                    <button className="btn btn-primary">About Us</button>
+                    <Link to="/about">
+                        <button className="btn btn-primary">About Us</button>
+                    </Link>
                     </div>
                 </div>
                 <div className="col md-6">

@@ -1,16 +1,36 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
     return (
         <div>
-            <Navbar bg="dark" variant="dark">
+            <Navbar bg="primary" variant="dark">
                 <Container>
-                <Navbar.Brand href="#home">Home</Navbar.Brand>
-                <Nav className="me-auto">
-                <Nav.Link href="#home">About</Nav.Link>
-                <Nav.Link href="#features">Services</Nav.Link>
-                <Nav.Link href="#pricing">Contact Us</Nav.Link>
+                <Navbar.Brand>Education Care Coaching Center</Navbar.Brand>
+                <Nav className="ms-auto">
+                <Nav.Link>
+                    <Link to="/home" className="menu">
+                        Home
+                    </Link>
+                </Nav.Link>
+                <Nav.Link>
+                    <Link to="/services" className="menu">
+                        Services
+                    </Link>
+                </Nav.Link>
+                <Nav.Link>
+                    <Link to="/about" className="menu">
+                        About Us
+                    </Link>
+                </Nav.Link>
+                <Nav.Link>
+                    <Link to="/contact" className="menu">
+                        Contact Us
+                    </Link>
+                </Nav.Link>
+               
                 </Nav>
                 </Container>
             </Navbar>
