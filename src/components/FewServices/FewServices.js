@@ -1,7 +1,8 @@
 import React from 'react';
 
 const FewServices = (props) => {
-    const {name, description, img, price} = props.service;
+    // Few Service section
+    const {name, description, img, price} = props.service;  //destructuring
     return (
         <div className="col">
             <div className="card h-100 d-flex align-items-center border border-1 border-primary rounded-3 p-3">

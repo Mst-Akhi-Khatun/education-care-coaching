@@ -5,15 +5,17 @@ import HomeBannar from '../HomeBannar/HomeBannar';
 
 
 const Home = () => {
-    const [services, setServices] = useService([]);
+    // Home section
+    const [services, setServices] = useService([]);  //Custom hook 
     return (
         <div>            
             <HomeBannar></HomeBannar>
             <div className="container my-5">
                 <h1 className="my-5 text-center text-uppercase">Our Courses</h1>
+            {/* few services */}
             <div className="row row-cols-1 row-cols-md-4 g-3">
                 {
-                    services.slice(0, services.length - 5).map(service => <FewServices 
+                    services.slice(0,4).map(service => <FewServices 
                         key={service.id} 
                         service={service}
                         ></FewServices>)
